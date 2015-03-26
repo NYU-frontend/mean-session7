@@ -18,21 +18,19 @@ html         { overflow-y:hidden; }
 .page a     { margin-top:50px; text-decoration: none; color: #777;}
 
 
-/* PAGES
-============================================================================= */
+/* pages with pageClass */
 .page-home      { background:#00D0BC; color:#333; }
 .page-about     { background:#E59400; color:#222; }
 .page-404   { background:#ffa6bb; color:#9e0000; }
 
-/* ANIMATIONS
-============================================================================= */
+/* chained to use leave and enter events  */
 
 .page.ng-leave  { z-index:9999; }
 .page.ng-enter  { z-index:8888; }
 
-/* page specific animations ------------------------ */
+/* page specific animations */
 
-/* home -------------------------- */
+/* 1 home */
 .page-home.ng-leave         {
     -webkit-transform-origin: 0% 0%;
     -webkit-animation: rotateFall 1s both ease-in;
@@ -47,7 +45,7 @@ html         { overflow-y:hidden; }
     animation:scaleUp 0.5s both ease-in;    
 }
 
-/* about ------------------------ */
+/* 2 about */
 .page-about.ng-leave        {
     -webkit-animation:slideOutLeft 0.5s both ease-in;
     -moz-animation:slideOutLeft 0.5s both ease-in;
@@ -59,7 +57,7 @@ html         { overflow-y:hidden; }
     animation:slideInRight 0.5s both ease-in;    
 }
 
-/* 404 ---------------------- */
+/* 3 404 */
 .page-404.ng-leave      {
     -webkit-transform-origin: 50% 50%;
     -webkit-animation: rotateOutNewspaper .5s both ease-in;
