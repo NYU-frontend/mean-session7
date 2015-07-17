@@ -1,4 +1,4 @@
-# mean session 7 files
+# Mean Session 7 
 
 Follow up on text input effects: 
 http://tympanus.net/Development/TextInputEffects/index.html
