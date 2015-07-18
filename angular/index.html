@@ -1,7 +1,7 @@
 <html ng-app="portfolioApp">
 
 <head>
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/_bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<script src="https://code.angularjs.org/1.4.2/angular.min.js"></script>
 	<script src="js/app.js"></script>
@@ -9,7 +9,7 @@
 </head>
 <body>
 	<div ng-controller="PortfolioListController">
-		<input type="text" placeholder="Search..." ng-model="searchFor" size="20" style="margin-bottom:20px; display:block;" />
+		<input class="search" type="text" placeholder="Search..." ng-model="searchFor" size="20" />
 
 		<div class="panel panel-primary" ng-repeat="portfolio in portfolios  | filter: { title: searchFor } ">
 			<div class="panel-heading">
@@ -40,8 +40,8 @@
 					</div>
 					<div class="panel-body">
 						<textarea placeholder="description" rows="4" ng-model="adding_portfolio.description" ></textarea>
-						<input type="text" placeholder="name" size="10" ng-model="adding_portfolio.name" />
-						<input type="text" placeholder="image url" size="20" ng-model="adding_portfolio.imageurl" />
+						<input type="text" placeholder="short name" size="16" ng-model="adding_portfolio.name" />
+						<input type="text" placeholder="image url" size="28" ng-model="adding_portfolio.imageurl" />
 					</div>
 					<button ng-click="addPortfolio(adding_portfolio)" class="btn btn-success">Add Portfolio</button>
 				</form>
@@ -49,9 +49,6 @@
 		</div>
 		<p class="cl">There are {{ portfolios.length }} portfolios available.</p>
 	</div>
-
-	
-
 </body>
 </html>
 

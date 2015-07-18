@@ -21,3 +21,7 @@ button {
 .panel-heading a {
     color: #fff;
 }
+.search {
+    margin-bottom:20px; 
+    display:block;
+}
