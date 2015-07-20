@@ -1,8 +1,6 @@
 html         { overflow-y:hidden; }
-
-/* make our pages be full width and full height */
+/* make our pages full width and full height */
 /* positioned absolutely so that the pages can overlap each other as they enter and leave */
-
 .page        { 
     font-family: Helvetica;
     font-size: 80px;
@@ -32,46 +30,31 @@ html         { overflow-y:hidden; }
 
 /* 1 home */
 .page-home.ng-leave         {
-    -webkit-transform-origin: 0% 0%;
-    -webkit-animation: rotateFall 1s both ease-in;
     transform-origin: 0% 0%;
     animation: rotateFall 1s both ease-in;
 }
 .page-home.ng-enter         {  
-    -webkit-animation:scaleUp 0.5s both ease-in;
     animation:scaleUp 0.5s both ease-in;    
 }
 
 /* 2 about */
 .page-about.ng-leave        {
-    -webkit-animation:slideOutLeft 0.5s both ease-in;
     animation:slideOutLeft 0.5s both ease-in;   
 }
 .page-about.ng-enter        {  
-    -webkit-animation:slideInRight 0.5s both ease-in;
     animation:slideInRight 0.5s both ease-in;    
 }
 
 /* 3 404 */
 .page-404.ng-leave      {
-    -webkit-transform-origin: 50% 50%;
-    -webkit-animation: rotateOutNewspaper .5s both ease-in;
     transform-origin: 50% 50%;
     animation: rotateOutNewspaper .5s both ease-in;
 }
 .page-404.ng-enter      { 
-    -webkit-animation:slideInUp 0.5s both ease-in;
     animation:slideInUp 0.5s both ease-in;  
 }
 
 /* leaving animations - rotate and fall */
-@-webkit-keyframes rotateFall {
-    0% { -webkit-transform: rotateZ(0deg); }
-    20% { -webkit-transform: rotateZ(10deg); -webkit-animation-timing-function: ease-out; }
-    40% { -webkit-transform: rotateZ(17deg); }
-    60% { -webkit-transform: rotateZ(16deg); }
-    100% { -webkit-transform: translateY(100%) rotateZ(17deg); }
-}
 @keyframes rotateFall {
     0% { transform: rotateZ(0deg); }
     20% { transform: rotateZ(10deg); animation-timing-function: ease-out; }
@@ -84,18 +67,11 @@ html         { overflow-y:hidden; }
 @keyframes scaleUp {
     from        { opacity: 0.3; transform: scale(0.8); }
 }
-@-webkit-keyframes scaleUp {
-    from        { opacity: 0.3; -webkit-transform: scale(0.8); }
-}
 
 /* slide in from the right */
 @keyframes slideInRight {
     from    { transform:translateX(100%); }
     to      { transform: translateX(0); }
-}
-@-webkit-keyframes slideInRight {
-    from    { -webkit-transform:translateX(100%); }
-    to      { -webkit-transform: translateX(0); }
 }
 
 /* slide in from the bottom */
@@ -103,23 +79,13 @@ html         { overflow-y:hidden; }
     from    { transform:translateY(100%); }
     to      { transform: translateY(0); }
 }
-@-webkit-keyframes slideInUp {
-    from    { -webkit-transform:translateY(100%); }
-    to      { -webkit-transform: translateY(0); }
-}
 
 /* slide out */
 @keyframes slideOutLeft {
     to      { transform: translateX(-100%); }
 }
-@-webkit-keyframes slideOutLeft {
-    to      { -webkit-transform: translateX(-100%); }
-}
 
 /* rotate out */
-@-webkit-keyframes rotateOutNewspaper {
-    to { -webkit-transform: translateZ(-3000px) rotateZ(360deg); opacity: 0; }
-}
 @keyframes rotateOutNewspaper {
     to { transform: translateZ(-3000px) rotateZ(360deg); opacity: 0; }
 }
