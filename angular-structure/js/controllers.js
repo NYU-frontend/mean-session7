@@ -10,7 +10,7 @@ helloWorldControllers.controller('ShowCtrl', ['$scope',
         $scope.message = "Show The World";
     }]);
 
-helloWorldControllers.controller('404Ctrl', ['$scope',
-    function 404Ctrl($scope) {
+helloWorldControllers.controller('FourCtrl', ['$scope',
+    function FourCtrl($scope) {
         $scope.message = "404 - you are lost!";
     }]);

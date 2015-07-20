@@ -19,7 +19,7 @@ html         { overflow-y:hidden; }
 /* pages with pageClass */
 .page-home      { background:#00D0BC; color:#333; }
 .page-about     { background:#E59400; color:#222; }
-.page-404   { background:#ffa6bb; color:#9e0000; }
+.page-404       { background:#ffa6bb; color:#9e0000; }
 
 /* chained to use leave and enter events  */
 

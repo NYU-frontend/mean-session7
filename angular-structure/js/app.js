@@ -1,8 +1,4 @@
-var helloWorldApp = angular.module('helloWorldApp', 
-    [
-    'ngRoute',   
-    'helloWorldControllers' 
-    ]);
+var helloWorldApp = angular.module('helloWorldApp', ['ngRoute', 'helloWorldControllers']);
 
 helloWorldApp.config(['$routeProvider',
     function($routeProvider) {
