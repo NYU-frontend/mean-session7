@@ -16,7 +16,7 @@ portfolioApp.controller('PortfolioListController', function( $scope ) {
 
     $scope.addPortfolio = function( new_portfolio ){
             // if new_portfolio is not defined
-    if (typeof(new_portfolio) == 'undefined') {
+    if (typeof(new_portfolio) === 'undefined') {
         // then add an error message to $scope and exit
         $scope.add_portfolio_error = "The form is not properly filled out";
         return false;
