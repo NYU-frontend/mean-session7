@@ -1,15 +1,5 @@
-var portfolioApp = angular.module('portfolioApp', ['ngRoute']);
-
-portfolioApp.config(function ($routeProvider) {
-    $routeProvider
-    .when("/portfolios",  { controller: "PortfolioListController", templateUrl: "app/partials/portfolios.html" })
-    .when("/",  { redirectTo: "/portfolios" })
-    .otherwise({ redirectTo: "/404_page" });
-});
-
-
 portfolioApp.controller('PortfolioListController', function( $scope ) {
-
+console.log('test');
     $scope.portfolios = [
     {name: 'vessel1309', title: 'Call of Booty', date: '2013-09-01', description: 'Arrrgh mateys! This be the finest vessel sailing these seas that yer eyes ever laid sight on. Arrrgh.', imageurl: 'images/drunkenPirate_thumb3.png' },
 
