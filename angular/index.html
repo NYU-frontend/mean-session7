@@ -22,14 +22,14 @@
 		</div>
 
 		<div class="cl">
-			<h3>Add a Portfolio</h3>
+			<h3>Add a Portfolio *</h3>
 			<div class="panel panel-default">
 				<div class="alert alert-danger" ng-show="add_portfolio_error">
 					{{add_portfolio_error}}
 				</div>
 				<form name="add_portfolio_form" novalidate>
 					<div class="panel-heading">
-						<input type="text" placeholder="title" size="20" ng-model="adding_portfolio.title" />
+						<input type="text" placeholder="title" size="20" ng-model="adding_portfolio.title" ng-required />
 						<div style="float:right">
 							<input 
 							type="text" 
