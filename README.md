@@ -1,5 +1,8 @@
 # Mean Session 7 
 
+###Please a laptop with your project in next session
+* also, install node.js on it: http://nodejs.org/
+
 ##Homework
 * add a detail page to your midterm project using the same techniques outlined in class and in the mean-session7done-ver1 branch of the repo here (Angular folder)
 * have your midterm project available in class next session
