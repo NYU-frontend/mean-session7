@@ -1,6 +1,6 @@
 # Mean Session 7 
 
-###Please a laptop with your project in next session
+###Please bring a laptop with your project in next session
 * also, install node.js on it: http://nodejs.org/
 
 ##Homework
